@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="m3dicDataSet" targetNamespace="http://tempuri.org/m3dicDataSet.xsd" xmlns:mstns="http://tempuri.org/m3dicDataSet.xsd" xmlns="http://tempuri.org/m3dicDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="m3dicConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="m3dicConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.M3dic.Properties.Settings.GlobalReference.Default.m3dicConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="doctorsTableAdapter" GeneratorDataComponentClassName="doctorsTableAdapter" Name="doctors" UserDataComponentName="doctorsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="m3dicConnectionString (Settings)" DbObjectName="m3dic.doctors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `staffid`, `first_name`, `last_name`, `password`, `Gender`, `age`, `phone_number`, `datejoined`, `email`, `line`, `city`, `qualification`, `timings`, `salary` FROM `doctors`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="pharmacistTableAdapter" GeneratorDataComponentClassName="pharmacistTableAdapter" Name="pharmacist" UserDataComponentName="pharmacistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="m3dicConnectionString (Settings)" DbObjectName="m3dic.pharmacist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `StaffId`, `FName`, `LName`, `password`, `gender`, `age`, `phonenumber`, `dateJoined`, `email`, `line`, `city`, `timings`, `salary` FROM `pharmacist`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="receptionistTableAdapter" GeneratorDataComponentClassName="receptionistTableAdapter" Name="receptionist" UserDataComponentName="receptionistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="m3dicConnectionString (Settings)" DbObjectName="m3dic.receptionist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `staffid`, `first_name`, `last_name`, `password`, `Gender`, `age`, `phone_number`, `datejoined`, `email`, `line`, `city`, `qualification`, `timings`, `salary` FROM `receptionist`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="m3dicDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="m3dicDataSet" msprop:Generator_UserDSName="m3dicDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="doctors" msprop:Generator_TableClassName="doctorsDataTable" msprop:Generator_TableVarName="tabledoctors" msprop:Generator_TablePropName="doctors" msprop:Generator_RowDeletingName="doctorsRowDeleting" msprop:Generator_RowChangingName="doctorsRowChanging" msprop:Generator_RowEvHandlerName="doctorsRowChangeEventHandler" msprop:Generator_RowDeletedName="doctorsRowDeleted" msprop:Generator_UserTableName="doctors" msprop:Generator_RowChangedName="doctorsRowChanged" msprop:Generator_RowEvArgName="doctorsRowChangeEvent" msprop:Generator_RowClassName="doctorsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pharmacist" msprop:Generator_TableClassName="pharmacistDataTable" msprop:Generator_TableVarName="tablepharmacist" msprop:Generator_TablePropName="pharmacist" msprop:Generator_RowDeletingName="pharmacistRowDeleting" msprop:Generator_RowChangingName="pharmacistRowChanging" msprop:Generator_RowEvHandlerName="pharmacistRowChangeEventHandler" msprop:Generator_RowDeletedName="pharmacistRowDeleted" msprop:Generator_UserTableName="pharmacist" msprop:Generator_RowChangedName="pharmacistRowChanged" msprop:Generator_RowEvArgName="pharmacistRowChangeEvent" msprop:Generator_RowClassName="pharmacistRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="receptionist" msprop:Generator_TableClassName="receptionistDataTable" msprop:Generator_TableVarName="tablereceptionist" msprop:Generator_TablePropName="receptionist" msprop:Generator_RowDeletingName="receptionistRowDeleting" msprop:Generator_RowChangingName="receptionistRowChanging" msprop:Generator_RowEvHandlerName="receptionistRowChangeEventHandler" msprop:Generator_RowDeletedName="receptionistRowDeleted" msprop:Generator_UserTableName="receptionist" msprop:Generator_RowChangedName="receptionistRowChanged" msprop:Generator_RowEvArgName="receptionistRowChangeEvent" msprop:Generator_RowClassName="receptionistRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
